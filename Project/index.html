@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <b><header>Student Enrollment Form</header></b>
+    <div class="container">
+        <div class="row">
+          <form class="col-md mb-3" id="form" onsubmit="return false"><br>
+            <div class="row mb-3">
+                <label for="colFormLabelSm" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Name</label>
+                <div class="col-md-9 col-sm-10">
+                  <input id="name" type="text" class="form-control-sm"  required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="colFormLabelSm" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Email</label>
+                <div class="col-md-9 col-sm-10">
+                  <input id="email" type="email" class="form-control-sm" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="colFormLabelSm" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Website</label>
+                <div class="col-md-9 col-sm-10">
+                  <input id="web" type="url" class="form-control-sm" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="colFormLabelSm" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Image Link</label>
+                <div class="col-md-9 col-sm-10">
+                  <input id="studentimg" type="url" class="form-control-sm" required>
+                </div>
+              </div>
+              <fieldset class="row mb-3">
+                <label for="gridRadios" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Gender</label>
+                <div class="col-md-9 col-sm-10">
+                  <div class="form-check-sm">
+                    <input class="form-check-input-sm" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked required>
+                    <label class="form-check-label label1" for="gridRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check-sm">
+                    <input class="form-check-input-sm" type="radio" name="gridRadios" id="gridRadios2" value="Female" required>
+                    <label class="form-check-label label1" for="gridRadios2">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="row mb-3">
+                <label for="skills" class="col-md-3 col-sm-2 col-form-label col-form-label-sm">Skills</label>
+                <div class="col-md-9 col-sm-10">
+                    <div class="form-check-sm form-check-inline">
+                        <input class="form-check-input-sm " type="checkbox" name="skills "id="inlineCheckbox1" value="Java">
+                        <label class="form-check-label label1" for="inlineCheckbox1">Java</label>
+                      </div>
+                      <div class="form-check-sm form-check-inline">
+                        <input class="form-check-input-sm" type="checkbox" name="skills "id="inlineCheckbox2" value="HTML">
+                        <label class="form-check-label label1" for="inlineCheckbox2">HTML</label>
+                      </div>
+                      <div class="form-check-sm form-check-inline">
+                        <input class="form-check-input-sm" type="checkbox" name="skills" id="inlineCheckbox3" value="CSS">
+                        <label class="form-check-label label1" for="inlineCheckbox3">CSS</label>
+                      </div>
+                </div>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button id="submitbutton" type="submit" class="btn btn-primary">Enroll Student</button>
+              </div>
+              <div class="btn-group" role="group" id="clear"aria-label="Basic example">
+                <button type="reset" class="btn btn-danger">Clear</button>
+              </div>
+            </form>
+          <div class="col-md">
+            <b><p id="list">Enrolled Students</p></b>
+            <div class="row overflow">
+                <table class="table-sm table-bordered table-striped border-dark">
+                  <thead>
+                    <th>Description</th>
+                    <th>Image</th>
+                  </thead>
+                  <tbody id="enrolledlist">
+                    <tr>
+                      <td width="70%">
+                        <h6>Nikhil</h6>
+                        <p>Male</p>
+                        <p>nikhil@gmail.com</p>
+                        <p><a href="">www.nikhil.com</a></p>
+                        <p>Java</p><br>
+                      </td>
+                        
+                      <td width="30%"> 
+                        <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg" alt="" class="center">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <b><p>Copyright 2020-2021 by Fresher Training</p></b>
+      </footer>
+      <script src="index.js"></script>
+</body>
+</html>
